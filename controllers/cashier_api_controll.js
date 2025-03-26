@@ -8,7 +8,7 @@ const getCashier = async (req, res, next) => {
       data,
     });
   } catch (error) {
-    console.log("Get Api is not Work Properly ");
+    console.log("Get Api is not Work Properly ", error.message);
   }
 };
 const createCashier = async (req, res, next) => {
