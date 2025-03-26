@@ -14,13 +14,12 @@ const getCashier = async (req, res, next) => {
 const createCashier = async (req, res, next) => {
   try {
     const data = await cashier.create(req.body);
-    console.log(abd)
     res.json({
       message: "Data Create Successfully ",
       data,
     });
   } catch (error) {
-    console.log(error , res.json({message : "Not work"}))
+    console.log(error, res.json({ message: "Not work" }))
   }
 };
 
@@ -32,7 +31,7 @@ const updateCashier = async (req, res, next) => {
       message: "Upadat Data SuccessFully",
       data,
     });
-  } catch (error) {}
+  } catch (error) { }
 };
 const deleteCashier = async (req, res) => {
   try {
